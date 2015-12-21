@@ -20,6 +20,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
 
-}
+            // 做注销
+        let app: AppDelegate  = UIApplication.sharedApplication().delegate as! AppDelegate
+            app.logout()
+            
+        }
+    }
+
 
